@@ -1,0 +1,388 @@
+
+body{
+    overflow-x: hidden;
+}
+.navigation{
+    background-color: black;
+}
+.nav-link{
+    color: white;
+}
+.a:hover{
+    color: white;
+}
+.navbar-nav{
+    padding-left: 90px;;
+}
+.navbar{
+   border: solid 3px green;
+   
+
+}
+.input {
+    color: white;
+    background: #000;
+}
+.input:hover{
+    background-color: white;
+}
+.search-form input::placeholder{
+color:#fff;
+}
+.search-form .input{
+border: none;
+border-bottom: 1px solid white;
+background-color: transparent;
+border-radius: 0px;
+}
+.button{
+background-color: #000;
+color: #fff;
+border: none;
+}
+.button:hover{
+background-color: rgb(99, 99, 243);
+}
+/* about section */
+
+
+
+
+/* ✅ Hover effect for main icons in .progress_section */
+.progress_section .offer_item img.img-fluid {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 10px;
+}
+
+/* On hover: zoom + shadow */
+.progress_section .offer_item:hover img.img-fluid {
+  transform: scale(1.08);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Optional: slight float-up effect for the entire card */
+.progress_section .offer_item {
+  transition: transform 0.3s ease;
+}
+
+.progress_section .offer_item:hover {
+  transform: translateY(-5px);
+}
+
+
+
+
+
+/* media query */
+@media screen and (max-width: 480px) {
+    .about_section {
+      padding: 10px 6px;
+    }
+    about_section img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+        object-fit: cover; /* optional, for better visual crop */
+      }
+    .about_section h1 {
+        padding-top: 5px;
+        font-size: 30px !important;
+        text-align: center;
+        align-items: center;
+    }
+  
+    .about_section p {
+        font-size: 20px !important;
+    }
+}
+
+
+.about_section{
+    background-color:  #E9B466;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    font-family: "Bebas Neue", serif;
+}
+.about_section h1{
+    color: #230C0D;
+    font-size: 84px ;
+    font-weight: 400 ;
+    text-transform: uppercase ;
+}
+.about_section p{
+    font-size: large;
+}
+/* progress section */
+/* media query */
+@media (max-width: 480px) {
+  .progress_section .col-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .progress_section h1, 
+  .progress_section h6 {
+    text-align: center;
+    font-size: 30px !important
+  }
+
+  .progress_section .offer_item {
+    max-width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+.progress_section{
+    font-family: "Bebas Neue", serif;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.progress_section h1{
+    color: #230C0D;
+    font-size: 84px ;
+    font-weight: 400 ;
+    text-transform: uppercase ;
+    text-align: center;
+}
+.progress_section h6{
+    font-family: none;
+    text-align: center;
+    text-transform: uppercase;
+}
+.img-shadow{
+    position: absolute;
+    bottom: 0px;
+    right: 50px;
+    width: 85%;
+    left: 1px;
+}
+.offer_item{
+    position: relative;
+    margin-left: 1px;   
+}
+.offer_item p{
+    position: absolute;
+    color: white;
+    bottom: 1px;
+    left: 20px;
+    font-size: large;
+}
+.row{
+    padding: 0px 15px 0px 15px;
+}
+
+/* service_section  */
+/* Media Query for 480px screen width (small phones) */
+@media (max-width: 480px) {
+    .service_section {
+      display:block;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  
+    .Service_left_section h1 {
+      font-size: 28px; /* Adjust font size for smaller screen */
+    }
+  
+    .Service_left_section h5 {
+      font-size: 14px; /* Smaller font size for subtitle */
+    }
+  
+    .bnt {
+      width: 160px; /* Adjust button width for smaller screens */
+      height: 35px; /* Adjust button height */
+    }
+  
+    .offer_item p {
+      font-size: 12px; /* Adjust text size for offer item */
+    }
+  
+    /* Adjust images for small screens */
+    .offer_item img {
+      width: 100%; /* Make images responsive */
+      max-width: 100%;
+    }
+  
+    .col-6 {
+        flex: 0 0 100%;
+      width: 100%; /* Ensure columns stack on small screens */
+    }
+  
+    /* Stack the items vertically */
+    .row {
+      flex-direction: column;
+      align-items: center; /* Center items vertically */
+    }
+  }
+  
+.service_section{
+    background-color:  #E9B466;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left:30px;
+    padding-right:30px;
+}
+.Service_left_section h1{
+    
+    color: rgb(51, 5, 51);
+    font-size: 64px ;
+    font-weight: 400 ;
+    text-transform: uppercase ;
+    text-align: start;
+}
+.Service_left_section h5{
+    color: black;
+    font-size: 20px ;
+    font-weight: 150 ;
+    text-transform: capitalize ;
+    text-align: start;
+}
+.bnt{
+    border: none;
+    width:300px;
+    height: 60px;
+    font-weight: 700;
+    background-color: rgb(51, 5, 51);
+    align-items: center;
+    border-radius: 30px;
+}
+.Service_right_section,.img{
+    padding-top: 0px;
+     margin: 10px;
+}
+
+/*  Public Services Section */
+
+
+
+/* hover effects */
+/* ✅ Hover effect for small images */
+.img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 10px;
+}
+
+.img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* ✅ Hover effect for big horizontal image */
+img[width="500px"][height="250px"] {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 10px;
+}
+
+img[width="500px"][height="250px"]:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ Button hover effect */
+.button.btn-primary {
+  padding: 10px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.button.btn-primary:hover {
+  transform: scale(1.05);
+  background-color: #004085;
+  color: #fff;
+}
+
+
+
+
+.public_service_section{
+    background-color:  white;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left:30px;
+    padding-right:30px;
+}
+.public_service_right_section h1{
+    
+    color: rgb(51, 5, 51);
+    font-size: 64px ;
+    font-weight: 400 ;
+    text-transform: uppercase ;
+    text-align: start;
+}
+.public_service_right_section h5{
+    color: black;
+    font-size: 20px ;
+    font-weight: 150 ;
+    text-transform: capitalize ;
+    text-align: start;
+}
+.bnt{
+    border: none;
+    width:300px;
+    height: 60px;
+    font-weight: 700;
+    background-color: rgb(51, 5, 51);
+    align-items: center;
+    border-radius: 30px;
+}
+.public_service_left_section,.img{
+    padding-top: 0px;
+     margin: 10px;
+}
+
+/* contact us section */
+.footer_section{
+    background-color:  #E9B466;
+}
+ 
+
+
+/* Footer_Section */
+.footer_section{
+    background-color: #0a0b32;
+    color: white;
+}
+.footer_section{
+    text-align: center;
+    align-items: center;
+}
+.footer{
+    text-align: center;
+    align-items: center;
+    display:flex;
+}
+.info-item {
+    text-align: center;
+    margin-left: 50px;
+    color: #cfcfcf;
+  }
+  
+  .info-item .icon {
+    background-color: #0056b3;
+    color: white;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin: auto;  
+} 
+.icon_footer{
+    background-color: white;
+    width: 90px;
+    text-align: center;
+    align-items: center;
+    display: inline-block;
+}
+.hr{
+   height: 700;
+}
